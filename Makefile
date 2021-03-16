@@ -13,4 +13,4 @@ native:
 	./mvnw package -Pnative -Dquarkus.native.container-build=true
 
 container: clean build
-	docker build -f src/main/docker/Dockerfile.jvm -t primozh/gcloud-cloud-run-demo:$(VERSION) .
+	docker build -f src/main/docker/Dockerfile.jvm -t eu.gcr.io/test-http-function-project/gcloud-cloud-run-demo:$(VERSION) .

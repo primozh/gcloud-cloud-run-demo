@@ -1,4 +1,4 @@
-package org.acme;
+package si.hrovat.gcloud.run.demo;
 
 import io.quarkus.test.junit.NativeImageTest;
 
