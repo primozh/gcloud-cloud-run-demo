@@ -1,4 +1,4 @@
-package demo
+package si.hrovat.gcloud.run.demo
 
 import io.smallrye.mutiny.helpers.test.UniAssertSubscriber
 import org.hamcrest.MatcherAssert

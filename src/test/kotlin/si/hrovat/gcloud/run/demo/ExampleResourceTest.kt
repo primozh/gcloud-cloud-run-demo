@@ -1,4 +1,4 @@
-package demo
+package si.hrovat.gcloud.run.demo
 
 import io.quarkus.test.junit.NativeImageTest
 import io.quarkus.test.junit.QuarkusTest
