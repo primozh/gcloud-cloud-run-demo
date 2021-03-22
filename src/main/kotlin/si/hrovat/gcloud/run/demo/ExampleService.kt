@@ -7,10 +7,8 @@ import io.smallrye.mutiny.Uni
 import io.smallrye.mutiny.infrastructure.Infrastructure
 import org.eclipse.microprofile.config.inject.ConfigProperty
 import org.jboss.logging.Logger
-import java.io.InputStream
 import javax.enterprise.context.ApplicationScoped
 import javax.inject.Inject
-import javax.inject.Singleton
 import javax.ws.rs.*
 import javax.ws.rs.core.MediaType
 import javax.ws.rs.core.Response
@@ -46,7 +44,7 @@ class FirestoreProducer {
     lateinit var projectId: String
 
     @javax.enterprise.inject.Produces
-    @Singleton
+    @ApplicationScoped
     fun firestore(): Firestore {
         val secret = GoogleCredentials.getApplicationDefault()
         val options =

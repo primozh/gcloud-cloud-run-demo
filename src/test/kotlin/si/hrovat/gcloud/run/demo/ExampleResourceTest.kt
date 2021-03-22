@@ -19,9 +19,6 @@ class ExampleResourceTest {
     @InjectSpy
     lateinit var exampleService: ExampleService
 
-//    @InjectMock
-//    lateinit var firestore: Firestore
-
     @Test
     fun testHelloEndpoint() {
         When {
